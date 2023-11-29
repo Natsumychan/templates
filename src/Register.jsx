@@ -1,4 +1,3 @@
-import "./Register.css"
 import jungla from "./assets/chris-lee-70l1tDAI6rM-unsplash 1.jpg"
 import logo from "./assets/Frame 4048.png"
 import googleLogo from "./assets/icons8-google.png"
@@ -6,7 +5,7 @@ import facebookLogo from "./assets/icons8-facebook.png"
 
 export default function RegisterScreen ()  {
  return <div className="flex">
-  <section className="w-1/2 flex flex-col items-center justify-center p-2.5 gap-2.5 h-screen">
+  <section className="w-1/2 flex flex-col items-center justify-center p-2.5 gap-2.5 h-auto mt-8">
   <div className="flex flex-col justify-center  shadow-md rounded px-8 pt-6 pb-8 mb-4">
     <img src={logo} alt="" className="w-80 h-7 mt-6 "/>
     <h2 className="font-display text-3xl font-light leading-10 mt-6 text-center">Bienvenido</h2>
@@ -51,7 +50,7 @@ export default function RegisterScreen ()  {
   </div>
   </section>
   <section className="w-1/2 ">
-   <img src={jungla} alt="jungla" className="object-fill w-screen h-screen"/>
+   <img src={jungla} alt="jungla" className="object-fill w-screen h-full"/>
   </section>
  </div>
 }
